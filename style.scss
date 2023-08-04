@@ -1,0 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/sharp-sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:22px;
+}
+body{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: 'Sharp Sans';
+    font-weight: 500;
+    header{
+        position:relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        height: 4rem;
+        #club-logo{
+            height: 3rem;
+            width: auto;
+        }
+        .nav-links{
+            display: flex;
+            margin-right: 2rem;
+            list-style: none;
+            gap:2rem;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        #user-logo{
+            height: 2.3rem;
+            width: auto;
+        }
+        .menu-logo-container{
+            display: none;
+            #menu-log{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 15px;
+    }
+    body{
+        header{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            #club-logo{
+                height: 3rem;
+                width: auto;
+            }
+            .nav-links{
+                display: none;
+                a{
+                    display: none;
+                }
+            }
+            .user-logo-container{
+                display: none;
+                #user-logo{
+                    display: none;
+                }
+            }
+            .menu-logo-container{
+                display: inline;
+                margin-left: auto;
+                #menu-logo{
+                    display: inline;
+                    height: 2.5rem;
+                    width: auto;
+                }
+            }
+        }
+        .sidebar-container{
+            display: none;
+            position: absolute;
+            right:0.7rem;
+            .sidebar-links{
+                display: flex;
+                flex-direction: column;
+                align-items:end;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                #user-logo2{
+                    height:2.3rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
