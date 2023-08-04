@@ -85,6 +85,7 @@ body header .menu-logo-container #menu-log {
     width: auto;
   }
   body .sidebar-container {
+    background-color: black;
     display: none;
     position: absolute;
     right: 0.7rem;
@@ -102,5 +103,16 @@ body header .menu-logo-container #menu-log {
   body .sidebar-container .sidebar-links #user-logo2 {
     height: 2.3rem;
     width: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .sidebar-container {
+    display: none;
+  }
+  .sidebar-container .sidebar-links {
+    display: none;
+  }
+  .sidebar-container .sidebar-links li {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
