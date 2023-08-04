@@ -104,3 +104,14 @@ body{
         }
     }
 }
+@media screen and (min-width: 769px) {
+    .sidebar-container{
+        display: none;
+        .sidebar-links{
+            display: none;
+            li{
+                display: none;
+            }
+        }
+    }
+}
