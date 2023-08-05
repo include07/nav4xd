@@ -83,6 +83,32 @@ body{
                 }
             }
         }
+        .sidebar-menu{
+            display: none;
+            background-color: black;
+            position: absolute;
+            top: 4.5rem;
+            left:0.7rem;
+            #down-image{
+                width:1rem;
+                height: auto;
+            }
+            .sidebar-menu-links{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:start;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                #user-logo2{
+                    height:2.3rem;
+                    width: auto;
+                }
+            }
+        }
         .sidebar-container{
             background-color: black;
             display: none;
@@ -109,6 +135,18 @@ body{
     .sidebar-container{
         display: none;
         .sidebar-links{
+            display: none;
+            li{
+                display: none;
+            }
+        }
+    }
+    .sidebar-menu{
+        display: none;
+        #down-image{
+            display: none;
+        }
+        .sidebar-menu-links{
             display: none;
             li{
                 display: none;

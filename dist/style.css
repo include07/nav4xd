@@ -84,6 +84,32 @@ body header .menu-logo-container #menu-log {
     height: 2.5rem;
     width: auto;
   }
+  body .sidebar-menu {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 4.5rem;
+    left: 0.7rem;
+  }
+  body .sidebar-menu #down-image {
+    width: 1rem;
+    height: auto;
+  }
+  body .sidebar-menu .sidebar-menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+  }
+  body .sidebar-menu .sidebar-menu-links a {
+    text-decoration: none;
+    color: white;
+  }
+  body .sidebar-menu .sidebar-menu-links #user-logo2 {
+    height: 2.3rem;
+    width: auto;
+  }
   body .sidebar-container {
     background-color: black;
     display: none;
@@ -113,6 +139,18 @@ body header .menu-logo-container #menu-log {
     display: none;
   }
   .sidebar-container .sidebar-links li {
+    display: none;
+  }
+  .sidebar-menu {
+    display: none;
+  }
+  .sidebar-menu #down-image {
+    display: none;
+  }
+  .sidebar-menu .sidebar-menu-links {
+    display: none;
+  }
+  .sidebar-menu .sidebar-menu-links li {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
